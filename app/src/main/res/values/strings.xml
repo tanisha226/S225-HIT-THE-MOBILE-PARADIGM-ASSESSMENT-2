@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Week_5</string>
+    <string name="welcome_message">Welcome %1$s. You have logged in as %2$s"</string>
+    <string name= "content">"This is content %1$d" </string>
+    <string-array name="userType">
+        <item>Admin</item>
+        <item>Manager</item>
+        <item>Customer</item>
+        <item>IT Support</item>
+    </string-array>
+</resources>
