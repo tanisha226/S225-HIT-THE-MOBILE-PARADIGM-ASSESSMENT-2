@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.week_5">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,13 +18,16 @@
         android:theme="@style/Theme.Week_5"
         tools:targetApi="35">
         <activity
-            android:name=".Activity2"
-            android:label="Second Activity"
+            android:name=".FindNearByActivity"
             android:exported="false" />
         <activity
+            android:name=".Activity2"
+            android:exported="false"
+            android:label="Second Activity" />
+        <activity
             android:name=".InformationAppActivity"
-            android:label="Information App"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Information App" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

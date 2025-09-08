@@ -166,3 +166,93 @@ This Android application is designed to augment the existing Muurrbuy website (h
 This Information App successfully demonstrates advanced Android development concepts while providing a practical solution for the Muurrbuy community. The implementation showcases modern Android development practices including async programming, touch event handling, local storage, and responsive UI design.
 
 The app serves as a foundation for future development and can be easily extended with additional features such as geolocation, media integration, and advanced database operations as outlined in the course requirements.
+
+
+# How to Setup/Run Project
+
+### Prerequisites
+
+#### System Requirements
+- *Operating System:* Windows 10/11, macOS 10.14+, or Linux Ubuntu 18.04+
+- *RAM:* Minimum 8GB (16GB recommended)
+- *Storage:* At least 4GB free space for Android Studio and SDK
+
+#### Software Requirements
+- *Android Studio:* Arctic Fox (2020.3.1) or later
+  - Download from: https://developer.android.com/studio
+- *Android SDK:* API Level 28+ (Android 9.0+)
+- *Java Development Kit:* JDK 8 or later
+- *Gradle:* Version 8.0+ (included with Android Studio)
+
+#### Device Requirements
+- *Physical Device:* Android 9.0 (API 28) or later
+- *Emulator:* Android Virtual Device (AVD) with API 28+
+- *USB Debugging:* Enabled on physical devices
+
+### Step-by-Step Setup Instructions
+
+#### 1. Clone the Repository
+bash
+git clone <repository-url>
+cd Week_5
+
+
+#### 2. Open Project in Android Studio
+1. Launch Android Studio
+2. Select "Open an existing Android Studio project"
+3. Navigate to the Week_5 folder and select it
+4. Wait for Android Studio to index the project
+
+#### 3. Configure Android SDK
+1. Go to *File → Project Structure → SDK Location*
+2. Ensure Android SDK is properly configured
+3. Install required SDK platforms:
+   - Android 14 (API 34) - Target SDK
+   - Android 9.0 (API 28) - Minimum SDK
+4. Install required build tools and support libraries
+
+#### 4. Sync Gradle Files
+1. Android Studio will automatically prompt to sync
+2. Click "Sync Now" or go to *File → Sync Project with Gradle Files*
+3. Wait for sync to complete (may take a few minutes on first run)
+
+#### 5. Build the Project
+1. Go to *Build → Make Project* (Ctrl+F9)
+2. Ensure build completes without errors
+3. Check the "Build" tab for any warnings or issues
+
+### Running the Application
+
+#### Option 1: Run on Physical Device
+1. *Enable Developer Options:*
+   - Go to Settings → About Phone
+   - Tap "Build Number" 7 times
+   - Go back to Settings → Developer Options
+   - Enable "USB Debugging"
+
+2. *Connect Device:*
+   - Connect device via USB cable
+   - Allow USB debugging when prompted
+   - Verify device appears in Android Studio's device list
+
+3. *Run the App:*
+   - Click the "Run" button (green play icon)
+   - Select your connected device
+   - Wait for app to install and launch
+
+#### Option 2: Run on Emulator
+1. *Create AVD:*
+   - Go to *Tools → AVD Manager*
+   - Click "Create Virtual Device"
+   - Select a device (e.g., Pixel 4)
+   - Choose system image (API 28+)
+   - Configure AVD settings and click "Finish"
+
+2. *Start Emulator:*
+   - Click the play button next to your AVD
+   - Wait for emulator to boot completely
+
+3. *Run the App:*
+   - Click the "Run" button
+   - Select the running emulator
+   - App will install and launch automatically

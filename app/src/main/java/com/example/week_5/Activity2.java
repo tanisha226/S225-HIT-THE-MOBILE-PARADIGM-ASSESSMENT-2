@@ -58,7 +58,12 @@ public class Activity2 extends Activity {
         // Test verification - you can check this in logcat
         System.out.println("Expected lines: " + numViews + ", Actual lines generated: " + actualLinesGenerated);
     }
-    
+
+    public void openNearByScreen(View view) {
+        Intent intent = new Intent(this, FindNearByActivity.class);
+        startActivity(intent);
+        finish();
+    }
     public void logout(View view) {
         // Return to the main activity (front page)
         Intent intent = new Intent(this, MainActivity.class);
